@@ -24,9 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8F0A5CEA2E88021100D9D970 /* Pink Bubbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pink Bubbles.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F0A5CF82E88021200D9D970 /* Pink BubblesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pink BubblesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F0A5D022E88021200D9D970 /* Pink BubblesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pink BubblesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0A5CEA2E88021100D9D970 /* Pli Bubbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pli Bubbles.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0A5CF82E88021200D9D970 /* Pli BubblesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pli BubblesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F0A5D022E88021200D9D970 /* Pli BubblesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pli BubblesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -85,9 +85,9 @@
 		8F0A5CEB2E88021100D9D970 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8F0A5CEA2E88021100D9D970 /* Pink Bubbles.app */,
-				8F0A5CF82E88021200D9D970 /* Pink BubblesTests.xctest */,
-				8F0A5D022E88021200D9D970 /* Pink BubblesUITests.xctest */,
+				8F0A5CEA2E88021100D9D970 /* Pli Bubbles.app */,
+				8F0A5CF82E88021200D9D970 /* Pli BubblesTests.xctest */,
+				8F0A5D022E88021200D9D970 /* Pli BubblesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8F0A5CE92E88021100D9D970 /* Pink Bubbles */ = {
+		8F0A5CE92E88021100D9D970 /* Pli Bubbles */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F0A5D0C2E88021200D9D970 /* Build configuration list for PBXNativeTarget "Pink Bubbles" */;
+			buildConfigurationList = 8F0A5D0C2E88021200D9D970 /* Build configuration list for PBXNativeTarget "Pli Bubbles" */;
 			buildPhases = (
 				8F0A5CE62E88021100D9D970 /* Sources */,
 				8F0A5CE72E88021100D9D970 /* Frameworks */,
@@ -110,16 +110,16 @@
 			fileSystemSynchronizedGroups = (
 				8F0A5CEC2E88021100D9D970 /* Pink Bubbles */,
 			);
-			name = "Pink Bubbles";
+			name = "Pli Bubbles";
 			packageProductDependencies = (
 			);
 			productName = "Pink Bubbles";
-			productReference = 8F0A5CEA2E88021100D9D970 /* Pink Bubbles.app */;
+			productReference = 8F0A5CEA2E88021100D9D970 /* Pli Bubbles.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8F0A5CF72E88021200D9D970 /* Pink BubblesTests */ = {
+		8F0A5CF72E88021200D9D970 /* Pli BubblesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F0A5D0F2E88021200D9D970 /* Build configuration list for PBXNativeTarget "Pink BubblesTests" */;
+			buildConfigurationList = 8F0A5D0F2E88021200D9D970 /* Build configuration list for PBXNativeTarget "Pli BubblesTests" */;
 			buildPhases = (
 				8F0A5CF42E88021200D9D970 /* Sources */,
 				8F0A5CF52E88021200D9D970 /* Frameworks */,
@@ -133,16 +133,16 @@
 			fileSystemSynchronizedGroups = (
 				8F0A5CFB2E88021200D9D970 /* Pink BubblesTests */,
 			);
-			name = "Pink BubblesTests";
+			name = "Pli BubblesTests";
 			packageProductDependencies = (
 			);
 			productName = "Pink BubblesTests";
-			productReference = 8F0A5CF82E88021200D9D970 /* Pink BubblesTests.xctest */;
+			productReference = 8F0A5CF82E88021200D9D970 /* Pli BubblesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8F0A5D012E88021200D9D970 /* Pink BubblesUITests */ = {
+		8F0A5D012E88021200D9D970 /* Pli BubblesUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8F0A5D122E88021200D9D970 /* Build configuration list for PBXNativeTarget "Pink BubblesUITests" */;
+			buildConfigurationList = 8F0A5D122E88021200D9D970 /* Build configuration list for PBXNativeTarget "Pli BubblesUITests" */;
 			buildPhases = (
 				8F0A5CFE2E88021200D9D970 /* Sources */,
 				8F0A5CFF2E88021200D9D970 /* Frameworks */,
@@ -156,11 +156,11 @@
 			fileSystemSynchronizedGroups = (
 				8F0A5D052E88021200D9D970 /* Pink BubblesUITests */,
 			);
-			name = "Pink BubblesUITests";
+			name = "Pli BubblesUITests";
 			packageProductDependencies = (
 			);
 			productName = "Pink BubblesUITests";
-			productReference = 8F0A5D022E88021200D9D970 /* Pink BubblesUITests.xctest */;
+			productReference = 8F0A5D022E88021200D9D970 /* Pli BubblesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8F0A5CE52E88021100D9D970 /* Build configuration list for PBXProject "Pink Bubbles" */;
+			buildConfigurationList = 8F0A5CE52E88021100D9D970 /* Build configuration list for PBXProject "Pli Bubbles" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8F0A5CE92E88021100D9D970 /* Pink Bubbles */,
-				8F0A5CF72E88021200D9D970 /* Pink BubblesTests */,
-				8F0A5D012E88021200D9D970 /* Pink BubblesUITests */,
+				8F0A5CE92E88021100D9D970 /* Pli Bubbles */,
+				8F0A5CF72E88021200D9D970 /* Pli BubblesTests */,
+				8F0A5D012E88021200D9D970 /* Pli BubblesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		8F0A5CFA2E88021200D9D970 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8F0A5CE92E88021100D9D970 /* Pink Bubbles */;
+			target = 8F0A5CE92E88021100D9D970 /* Pli Bubbles */;
 			targetProxy = 8F0A5CF92E88021200D9D970 /* PBXContainerItemProxy */;
 		};
 		8F0A5D042E88021200D9D970 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8F0A5CE92E88021100D9D970 /* Pink Bubbles */;
+			target = 8F0A5CE92E88021100D9D970 /* Pli Bubbles */;
 			targetProxy = 8F0A5D032E88021200D9D970 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -393,6 +393,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pli Bubbles";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -431,6 +432,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pli Bubbles";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -476,7 +478,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pink Bubbles.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pink Bubbles";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pli Bubbles.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pli Bubbles";
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
 			name = Debug;
@@ -498,7 +500,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pink Bubbles.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pink Bubbles";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pli Bubbles.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pli Bubbles";
 				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
 			name = Release;
@@ -548,7 +550,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8F0A5CE52E88021100D9D970 /* Build configuration list for PBXProject "Pink Bubbles" */ = {
+		8F0A5CE52E88021100D9D970 /* Build configuration list for PBXProject "Pli Bubbles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F0A5D0A2E88021200D9D970 /* Debug */,
@@ -557,7 +559,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F0A5D0C2E88021200D9D970 /* Build configuration list for PBXNativeTarget "Pink Bubbles" */ = {
+		8F0A5D0C2E88021200D9D970 /* Build configuration list for PBXNativeTarget "Pli Bubbles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F0A5D0D2E88021200D9D970 /* Debug */,
@@ -566,7 +568,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F0A5D0F2E88021200D9D970 /* Build configuration list for PBXNativeTarget "Pink BubblesTests" */ = {
+		8F0A5D0F2E88021200D9D970 /* Build configuration list for PBXNativeTarget "Pli BubblesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F0A5D102E88021200D9D970 /* Debug */,
@@ -575,7 +577,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8F0A5D122E88021200D9D970 /* Build configuration list for PBXNativeTarget "Pink BubblesUITests" */ = {
+		8F0A5D122E88021200D9D970 /* Build configuration list for PBXNativeTarget "Pli BubblesUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8F0A5D132E88021200D9D970 /* Debug */,
