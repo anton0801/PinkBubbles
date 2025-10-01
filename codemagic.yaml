@@ -10,6 +10,7 @@ workflows:
             distribution_type: app_store
             bundle_identifier: com.plibubblesapp.PliBubbles
           vars:
+            APP_STORE_CONNECT_KEY: Vivien Huffer (Pli Bubbles)
             APP_STORE_APPLE_ID: 6753183931
             BUNDLE_ID: "com.plibubblesapp.PliBubbles"
             XCODE_SCHEME: "Pli Bubbles" # <-- Put the name of your Xcode scheme here
@@ -32,6 +33,7 @@ workflows:
           - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
         publishing:
           app_store_connect:
+            api_key: $APP_STORE_CONNECT_KEY
             auth: integration
             # Configuration related to App Store (optional)
 
