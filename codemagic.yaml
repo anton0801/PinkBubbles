@@ -16,7 +16,7 @@ workflows:
         XCODE_PROJECT: "Pli Bubbles.xcodeproj"    # <-- поменял с workspace на project
         XCODE_SCHEME: "Pli Bubbles"
     scripts:
-     - name: Set up provisioning profiles settings on Xcode project
+      - name: Set up provisioning profiles settings on Xcode project
         script: xcode-project use-profiles
       - name: Increment build number
         script: | 
