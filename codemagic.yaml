@@ -13,6 +13,7 @@ workflows:
             APP_STORE_CONNECT_KEY: Vivien Huffer (Pli Bubbles)
             APP_STORE_APPLE_ID: 6753183931
             BUNDLE_ID: "com.plibubblesapp.PliBubbles"
+            XCODE_WORKSPACE: "Pli Bubbles.xcodeproj"
             XCODE_SCHEME: "Pli Bubbles" # <-- Put the name of your Xcode scheme here
         scripts:
           - name: Increment build number
@@ -23,9 +24,9 @@ workflows:
               agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
           - name: Build ipa for distribution
             script: |
-                xcode-project build-ipa \
-                --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
-                --scheme "$XCODE_SCHEME"
+              xcode-project build-ipa \
+              --project "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
+              --scheme "$XCODE_SCHEME"
         artifacts:
           - build/ios/ipa/*.ipa
           - /tmp/xcodebuild_logs/*.log
