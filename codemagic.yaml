@@ -1,52 +1,41 @@
 workflows:
-    sample-workflow:
-        name: Codemagic Pli Bubbles workflow
-        max_build_duration: 120
-        instance_type: mac_mini_m2
-        integrations:
-          app_store_connect: Vivien Huffer (Pli Bubbles)
-        environment:
-          ios_signing:
-            distribution_type: app_store
-            bundle_identifier: com.plibubblesapp.PliBubbles
-          vars:
-            APP_STORE_CONNECT_KEY: Vivien Huffer (Pli Bubbles)
-            APP_STORE_APPLE_ID: 6753183931
-            BUNDLE_ID: "com.plibubblesapp.PliBubbles"
-            XCODE_WORKSPACE: "Pli Bubbles.xcodeproj"
-            XCODE_SCHEME: "Pli Bubbles" # <-- Put the name of your Xcode scheme here
-        scripts:
-          - name: Increment build number
-            script: | 
-              #!/bin/sh
-              cd $CM_BUILD_DIR
-              LATEST_BUILD_NUMBER=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID")
-              agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
-          - name: Build ipa for distribution
-            script: |
-              xcode-project build-ipa \
-              --project "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
-              --scheme "$XCODE_SCHEME"
-        artifacts:
-          - build/ios/ipa/*.ipa
-          - /tmp/xcodebuild_logs/*.log
-          - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
-          - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
-        publishing:
-          app_store_connect:
-            api_key: $APP_STORE_CONNECT_KEY
-            auth: integration
-            # Configuration related to App Store (optional)
-
-            # Optional boolean, defaults to false. Whether or not to submit the uploaded
-            # build to App Store review. Note: This action is performed during post-processing.
-            submit_to_app_store: true
-
-            # Optional boolean, defaults to false. Set to true to cancel the previous
-            # submission (if applicable) when submitting a new build to App Store review.
-            # This allows automatically submitting a new build for review if a previous submission exists.
-            # Note: This action is performed during post-processing.
-            cancel_previous_submissions: true
-            
-            # Optional, defaults to MANUAL. Supported values: MANUAL, AFTER_APPROVAL or SCHEDULED
-            release_type: SCHEDULED
+  sample-workflow:
+    name: Codemagic Pli Bubbles workflow
+    max_build_duration: 120
+    instance_type: mac_mini_m2
+    integrations:
+      app_store_connect: Vivien Huffer (Pli Bubbles)
+    environment:
+      ios_signing:
+        distribution_type: app_store
+        bundle_identifier: com.plibubblesapp.PliBubbles
+      vars:
+        APP_STORE_CONNECT_KEY: Vivien Huffer (Pli Bubbles)
+        APP_STORE_APPLE_ID: 6753183931
+        BUNDLE_ID: "com.plibubblesapp.PliBubbles"
+        XCODE_PROJECT: "Pli Bubbles.xcodeproj"    # <-- поменял с workspace на project
+        XCODE_SCHEME: "Pli Bubbles"
+    scripts:
+      - name: Increment build number
+        script: | 
+          #!/bin/sh
+          cd $CM_BUILD_DIR
+          LATEST_BUILD_NUMBER=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID")
+          agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
+      - name: Build ipa for distribution
+        script: |
+          xcode-project build-ipa \
+            --project "$CM_BUILD_DIR/$XCODE_PROJECT" \
+            --scheme "$XCODE_SCHEME"
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+    publishing:
+      app_store_connect:
+        api_key: $APP_STORE_CONNECT_KEY
+        auth: integration
+        submit_to_app_store: true
+        cancel_previous_submissions: true
+        release_type: SCHEDULED
