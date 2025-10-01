@@ -4,13 +4,13 @@ workflows:
     max_build_duration: 120
     instance_type: mac_mini_m2
     integrations:
-      app_store_connect: Vivien Huffer (Pli Bubbles)
+      app_store_connect: pli_bubbles_api_key
     environment:
       ios_signing:
         distribution_type: app_store
         bundle_identifier: com.plibubblesapp.PliBubbles
       vars:
-        APP_STORE_CONNECT_KEY: Vivien Huffer (Pli Bubbles)
+        APP_STORE_CONNECT_KEY: pli_bubbles_api_key
         APP_STORE_APPLE_ID: 6753183931
         BUNDLE_ID: "com.plibubblesapp.PliBubbles"
         XCODE_PROJECT: "Pli Bubbles.xcodeproj"    # <-- поменял с workspace на project
